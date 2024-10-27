@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111; /* Dark background to make bright colors pop */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('diwali-bg.jpg') no-repeat center center fixed; /* Add a Diwali-themed background */
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+}
+
+/* Main Heading Styling */
+.main-heading {
+    font-size: 3em;
+    color: #FFDD44; /* Bright gold color */
+    text-shadow: 2px 2px 5px #FF4500; /* Shadow to give glowing effect */
+}
+
+/* Description Styling */
+.description {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+    color: #FFF5BA; /* Light golden text */
+}
+
+/* Action Buttons Styling */
+.action-buttons {
+    margin: 20px 0;
+}
+
+a.diwali-link, 
+button.diwali-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Link Style */
+a.diwali-link {
+    background-color: #FF5733; /* Vibrant orange */
+    color: white;
+}
+
+/* Button Style */
+button.diwali-button {
+    background-color: #FFC300; /* Bright yellow */
+    color: white;
+}
+
+a.diwali-link:hover,
+button.diwali-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1); /* Glow effect */
+}
+
+/* Lanterns for Decoration */
+.lanterns {
+    margin: 30px 0;
+}
+
+.lantern {
+    width: 100px;
+    margin: 0 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #FFDD44;
+}
